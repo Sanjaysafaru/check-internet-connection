@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ECF9FF;
+}
+.popup{
+    background-color: #fff;
+    width: 450px;
+    top: -25%;
+    visibility: hidden;
+    border-radius: 5px;
+    padding: 13px 17px 20px;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    border-top: 3px solid red;
+    transform: translatex(-50%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 0.25s ease;
+}
+.popup.show{
+    top: 0;
+    visibility: visible;
+}
+.popup.online{
+    border-top: 3px solid #2ECC71;
+}
+.popup .icon img{
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    margin-top: -30%;
+    padding: 17px;
+    transform: scale(0.4);
+    height: fit-content;
+}
+.popup.online img{
+    background-color: #2ECC71;
+}
+.popup .title{
+    font-size: 1.4rem;
+    margin-bottom: 7px;
+}
+.popup .reconnect{
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: #A555EC;
+    padding: 8px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.popup .reconnect:active{
+    transform: scale(0.98);
+}
